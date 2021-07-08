@@ -1,0 +1,118 @@
+body{
+    background : url('./img/oasis.jpeg') no-repeat center fixed ;
+    background-size : cover;
+}
+
+article{
+    display:flex;
+    flex-direction: column;
+}
+
+.question,.result{
+    display:none;
+}
+
+#img{
+    width : 300px;
+    height : 300px;
+    margin : 0 auto;
+}
+
+.kakao_ad{
+    width:300px;
+    margin:0 auto;
+}
+
+.banner{
+    display:flex;
+    justify-content: center;
+    width:300px;
+    margin:0 auto;
+}
+
+.banner-img{
+    width:300px;
+}
+
+.slash{
+    width : 300px;
+    heigth : 100px;
+    margin : 0 auto;
+
+}
+
+.rectangle{
+    width: 288px;
+    height: 8px;
+    background-color: #383a43;
+    margin: 0 auto;
+}
+
+.text-center{
+    font-weight:bold
+}
+
+
+.skyblueText{
+    color:#00008b;
+}
+
+.orangeText{
+    font-family: "koverwatch";
+    font-weight : bold;
+    color: #000000;
+}
+
+.whiteText{
+    font-family: "koverwatch";
+    color:white;
+}
+
+#line{
+    margin: 10px;
+}
+
+.topic{
+    color:#800000;
+}
+
+#A, #B{
+    font-family: "koverwatch";
+    text-align:center;
+    color: white;
+}
+
+.gap-2{
+    margin: 0 auto;
+}
+
+.properSize{
+    font-size:1.3em;
+    font-weight:bold;
+}
+
+.topic{
+    font-size:2em;
+    font-weight:bold;
+}
+
+.makerContent{
+    color:black;
+    text-align:center;
+}
+
+.video, .video1 {
+    right: 0;
+    bottom: 0;
+    left :0;
+    top:0;
+    padding:0px;
+    width:100%;
+    height:100%;
+    position:absolute;
+}
+
+.videoTitle0 , .videoTitle1{
+    text-align:center;
+    font-weight:bold;
+}
