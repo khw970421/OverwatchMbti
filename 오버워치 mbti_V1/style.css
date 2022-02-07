@@ -1,92 +1,97 @@
-article{
-    display:flex;
-    flex-direction: column;
+article {
+  display: flex;
+  flex-direction: column;
 }
 
-.question{
-    display:none;
+.question {
+  display: none;
 }
 
-.result{
-    display:none;
+.result {
+  display: none;
 }
 
-#img{
-    width : 300px;
-    height : 300px;
-    margin : 0 auto;
+#img {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
 }
 
-.kakao_ad{
-    width:320px;
-    margin:0 auto;
+.kakao_ad {
+  width: 320px;
+  margin: 0 auto;
 }
 
-.banner{
-    display:flex;
-    justify-content: center;
-    width:300px;
-    margin:0 auto;
+.banner {
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  margin: 0 auto;
 }
 
-.banner-img{
-    width:300px;
+.banner-img {
+  width: 300px;
 }
 
-.slash{
-    width : 300px;
-    heigth : 100px;
-    margin : 0 auto;
-
+.slash {
+  width: 300px;
+  heigth: 100px;
+  margin: 0 auto;
 }
 
-#explain{
-    color: #ff9300;
+#explain {
+  color: #ff9300;
 }
 
-.rectangle{
-    width: 288px;
-    height: 8px;
-    background-color: #383a43;
-    margin: 0 auto;
+.rectangle {
+  width: 288px;
+  height: 8px;
+  background-color: #383a43;
+  margin: 0 auto;
 }
 
-body{
-    background-color: black;
+body {
+  background-color: black;
 }
 
-.orangeText{
-    color: #ff9300;
+.orangeText {
+  color: #ff9300;
 }
 
-.whiteText{
-    color:white;
+.whiteText {
+  color: white;
 }
 
-#line{
-    margin: 10px;
+#line {
+  margin: 10px;
 }
 
-#A{
-    text-align:center;
-    color: white;
+#A {
+  text-align: center;
+  color: white;
 }
 
-#B{
-    text-align:center;
-    color: white;
+#B {
+  text-align: center;
+  color: white;
 }
 
-.gap-2{
-    margin: 0 auto;
+.gap-2 {
+  margin: 0 auto;
 }
 
-.properSize{
-    font-size:1em
+.properSize {
+  font-size: 1em;
 }
 
-.topic{
-    font-size:1.5em;
+.topic {
+  font-size: 1.5em;
 }
 
+.text-center {
+  font-weight: bold;
+}
 
+#beforeUrl {
+  color: #ff9300;
+}
