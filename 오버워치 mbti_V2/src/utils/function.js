@@ -3,19 +3,24 @@ import { A, B } from "../question/selection/second1Answer.js";
 import { q3A, q3B } from "../question/selection/third2Answer.js";
 import { result, result2 } from "../resultExplain/result.js";
 
-let startTime, endTime;
-var num = 1;
+let num = 1;
 let mbti = "";
 let isMore;
+// 전체 걸린 시간 체크
+let startTime, endTime;
+
+// 하나의 문제에 걸린 시간 체크
 let timerId;
 
-const shuffleArray = (array) => {
-  for (let i = 1; i <= Object.keys(array).length; i++) {
+// Obj 순서 셔플
+const shuffleArray = (questionObj) => {
+  for (let i = 1; i <= Object.keys(questionObj).length; i++) {
     let j = Math.floor(Math.random() * i + 1);
-    [array[i], array[j]] = [array[j], array[i]];
+    [questionObj[i], questionObj[j]] = [questionObj[j], questionObj[i]];
   }
 };
 
+// 질문 순서 셔플 후 진행
 function start() {
   startTime = new Date();
   $(".start").hide();
@@ -24,20 +29,21 @@ function start() {
   next();
 }
 
+// A를 클릭할 경우 계산값 추가 및 isMore만 상황에 따라 true
 $("#A").click(function () {
   clearTimeout(timerId);
 
   if (num < 13) {
-    var type = $("#type").val();
-    var preValue = $("#" + type).val();
+    const type = $("#type").val();
+    const preValue = $("#" + type).val();
     $("#" + type).val(parseInt(preValue) + 1);
   } else if (num == 14) {
     isMore = true;
   }
-  console.log("Aclick", isMore, num);
   next();
 });
 
+// B를 클릭할경우 isMore만 상황에 따라 false
 $("#B").click(function () {
   clearTimeout(timerId);
 
@@ -47,6 +53,13 @@ $("#B").click(function () {
   next();
 });
 
+/*
+1. 13이하 : 클릭 동작
+2. 13 : MBTI 확정 및 강약MBTI 질문 추가 
+3. 14 : 강약MBTI 질문 완료 및 필요없는 질문 추가
+4. 15 : 필요없는 질문 완료
+5. 15 초과 : 결과 출력
+*/
 function next() {
   if (num == 13) {
     ganimedes();
@@ -116,8 +129,6 @@ function next() {
     } else {
       $(".question").hide();
       $(".result").show();
-
-      console.log(isMore, result2[mbti]["HERO"]);
 
       if (isMore) {
         $("#img").attr("src", result[mbti]["img"]);
