@@ -1,6 +1,6 @@
-import { estj, intp } from "./selection/first12Answer.js";
+import { estj, intp } from "./selection/firstMbti.js";
 
-let questionTitle = [
+const questionTitle1 = [
   "게임을 시작하기 전",
   "전리품 상자에서 한 번에 전설 스킨이 4개 나올 때",
   "올해의 목표를 세우려 한다. 어떤 목표를 세울까?",
@@ -15,7 +15,7 @@ let questionTitle = [
   "자리야 궁이 준비되었을 때 나는",
 ];
 
-let questionTitle2 = {
+const questionTitle2 = {
   ISTJ: "12시에 모이는 곳에 가야 할 때",
   ISFJ: "팀원들과의 목표한 결과가 나오지 않았을 때",
   INFJ: "팀원과 궁극기를 연계하고 싶은데 계속 팀원이 먼저 사용할 때",
@@ -37,24 +37,24 @@ let questionTitle2 = {
   ENTP: "영웅을 플레이하려고 할 때 ",
 };
 
-let questionTitle3 = {
+const questionTitle3 = {
   1: "둘 중 하나를 선택해야 할 때",
   2: "자신에게 더욱 의미있는 것은?",
 };
 
-var q = {
-  1: { title: questionTitle[0], type: "EI", A: estj[0], B: intp[0] },
-  2: { title: questionTitle[1], type: "EI", A: estj[1], B: intp[1] },
-  3: { title: questionTitle[2], type: "EI", A: estj[2], B: intp[2] },
-  4: { title: questionTitle[3], type: "SN", A: estj[3], B: intp[3] },
-  5: { title: questionTitle[4], type: "SN", A: estj[4], B: intp[4] },
-  6: { title: questionTitle[5], type: "SN", A: estj[5], B: intp[5] },
-  7: { title: questionTitle[6], type: "TF", A: estj[6], B: intp[6] },
-  8: { title: questionTitle[7], type: "TF", A: estj[7], B: intp[7] },
-  9: { title: questionTitle[8], type: "TF", A: estj[8], B: intp[8] },
-  10: { title: questionTitle[9], type: "JP", A: estj[9], B: intp[9] },
-  11: { title: questionTitle[10], type: "JP", A: estj[10], B: intp[10] },
-  12: { title: questionTitle[11], type: "JP", A: estj[11], B: intp[11] },
+const mbtiQuestionObj = {
+  1: { title: questionTitle1[0], type: "EI", A: estj[0], B: intp[0] },
+  2: { title: questionTitle1[1], type: "EI", A: estj[1], B: intp[1] },
+  3: { title: questionTitle1[2], type: "EI", A: estj[2], B: intp[2] },
+  4: { title: questionTitle1[3], type: "SN", A: estj[3], B: intp[3] },
+  5: { title: questionTitle1[4], type: "SN", A: estj[4], B: intp[4] },
+  6: { title: questionTitle1[5], type: "SN", A: estj[5], B: intp[5] },
+  7: { title: questionTitle1[6], type: "TF", A: estj[6], B: intp[6] },
+  8: { title: questionTitle1[7], type: "TF", A: estj[7], B: intp[7] },
+  9: { title: questionTitle1[8], type: "TF", A: estj[8], B: intp[8] },
+  10: { title: questionTitle1[9], type: "JP", A: estj[9], B: intp[9] },
+  11: { title: questionTitle1[10], type: "JP", A: estj[10], B: intp[10] },
+  12: { title: questionTitle1[11], type: "JP", A: estj[11], B: intp[11] },
 };
 
-export { questionTitle, questionTitle2, questionTitle3, q };
+export { questionTitle2, questionTitle3, mbtiQuestionObj };

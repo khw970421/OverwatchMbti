@@ -1,6 +1,10 @@
-import { q, questionTitle2, questionTitle3 } from "../question/question.js";
-import { A, B } from "../question/selection/second1Answer.js";
-import { q3A, q3B } from "../question/selection/third2Answer.js";
+import {
+  mbtiQuestionObj,
+  questionTitle2,
+  questionTitle3,
+} from "../question/question.js";
+import { A, B } from "../question/selection/secondBoldMbti.js";
+import { q3A, q3B } from "../question/selection/thirdNoImportant.js";
 import { result, result2 } from "../resultExplain/result.js";
 
 let num = 1;
@@ -25,7 +29,7 @@ function start() {
   startTime = new Date();
   $(".start").hide();
   $(".question").show();
-  shuffleArray(q);
+  shuffleArray(mbtiQuestionObj);
   next();
 }
 
@@ -76,10 +80,10 @@ function next() {
   } else if (num < 13) {
     ganimedes();
     $(".progress-bar").attr("style", "width: calc(100/16*" + num + "%)");
-    $("#title").html(q[num]["title"]);
-    $("#type").val(q[num]["type"]);
-    $("#A").html(q[num]["A"]);
-    $("#B").html(q[num]["B"]);
+    $("#title").html(mbtiQuestionObj[num]["title"]);
+    $("#type").val(mbtiQuestionObj[num]["type"]);
+    $("#A").html(mbtiQuestionObj[num]["A"]);
+    $("#B").html(mbtiQuestionObj[num]["B"]);
 
     num++;
     $("#A").click(function () {
