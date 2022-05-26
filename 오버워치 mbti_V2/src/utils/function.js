@@ -50,6 +50,7 @@ $("#B").click(function () {
 function next() {
   if (num == 13) {
     ganimedes();
+    $(".progress-bar").attr("style", "width: calc(100/16*" + num + "%)");
     $("#EI").val() >= 2 ? (mbti += "E") : (mbti += "I");
     $("#SN").val() >= 2 ? (mbti += "S") : (mbti += "N");
     $("#TF").val() >= 2 ? (mbti += "T") : (mbti += "F");
