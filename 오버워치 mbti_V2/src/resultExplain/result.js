@@ -3,6 +3,7 @@ import { explain, explain2, explain3 } from "./explain.js";
 
 const isRandom = () => Math.ceil(Math.random() * 10) % 2 === 0;
 
+// 좀더 강한것이 result 약한것이 result2
 let result = {
   ISTJ: {
     HERO: "파라",
@@ -106,16 +107,27 @@ let result = {
       "저격수다. 조심하십시오",
     ],
   },
-  ENFJ: {
-    HERO: "메르시",
-    explain: explain[10],
-    img: img[10],
-    line: [
-      "뭐 치료는 해드릴게요. 늘 그랫듯이",
-      "잠시만 차분하게 평화를 즐겨볼까여? 물론 그리 길진않겠지만",
-      "항상 폭력만이 해법이 되어야할까요?",
-    ],
-  },
+  ENFJ: isRandom()
+    ? {
+        HERO: "정커퀸",
+        explain: explain3[1],
+        img: img3[1],
+        line: [
+          "전원! 내게로 모여!",
+          "난 타고난 지도자야.",
+          "자! 투지를 불태워서 달려 보라고!",
+        ],
+      }
+    : {
+        HERO: "메르시",
+        explain: explain[10],
+        img: img[10],
+        line: [
+          "뭐 치료는 해드릴게요. 늘 그랫듯이",
+          "잠시만 차분하게 평화를 즐겨볼까여? 물론 그리 길진않겠지만",
+          "항상 폭력만이 해법이 되어야할까요?",
+        ],
+      },
   ENTJ: {
     HERO: "솔져",
     explain: explain[11],
@@ -225,16 +237,28 @@ let result2 = {
       "어떻게든 내가 안고 갈 짐이다.",
     ],
   },
-  INFP: {
-    HERO: "아나",
-    explain: explain2[6],
-    img: img2[6],
-    line: [
-      "너희를 집으로 무사히 돌려보내겠다.",
-      "현명하게 행동해라. 함께 헤쳐 나가자.",
-      "우리 팀엔 아직 내가 필요해.",
-    ],
-  },
+  INFP: isRandom()
+    ? {
+        HERO: "아나",
+        explain: explain2[6],
+        img: img2[6],
+        line: [
+          "너희를 집으로 무사히 돌려보내겠다.",
+          "현명하게 행동해라. 함께 헤쳐 나가자.",
+          "우리 팀엔 아직 내가 필요해.",
+        ],
+      }
+    : {
+        HERO: "키리코",
+        explain: explain3[2],
+        img: img3[2],
+        line: [
+          "항상 뒤를 조심하세요. 녀석들이 뭘 시도할 지 몰라요.",
+          "옳은 일이 항상 법적으로 정당한 건 아니야.",
+          "너무 많이 다치시는 거 아니에요?",
+          "내 길은, 내 손으로 찾겠어!",
+        ],
+      },
   INTP: {
     HERO: "윈스턴",
     explain: explain2[7],

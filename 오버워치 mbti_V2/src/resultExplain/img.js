@@ -36,6 +36,6 @@ let img2 = [
   "./img/hero/hog.png",
 ];
 
-let img3 = ["./img/hero/sojourn.png"];
+let img3 = ["./img/hero/sojourn.png","./img/hero/junkerqueen.png","./img/hero/kiriko.png"];
 
 export { img, img2, img3 };
