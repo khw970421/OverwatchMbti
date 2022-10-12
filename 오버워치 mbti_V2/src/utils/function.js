@@ -68,10 +68,15 @@ function next() {
   if (num == 13) {
     ganimedes();
     $(".progress-bar").attr("style", "width: calc(100/16*" + num + "%)");
+
     $("#EI").val() >= 2 ? (mbti += "E") : (mbti += "I");
     $("#SN").val() >= 2 ? (mbti += "S") : (mbti += "N");
     $("#TF").val() >= 2 ? (mbti += "T") : (mbti += "F");
     $("#JP").val() >= 2 ? (mbti += "J") : (mbti += "P");
+
+    // Test : 테스트할때 위의 4줄을 지우고 아래 코드로 처리
+    // mbti += "ENFJ";
+
     num++;
     $("#title").html(questionTitle2[mbti]);
 
