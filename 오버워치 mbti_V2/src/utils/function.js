@@ -146,10 +146,10 @@ function next() {
         $("#name").html(result[mbti]["HERO"] + "의 대사");
         for (let i = 0; i < result[mbti]["line"].length; i++) {
           document
-            .getElementById("line")
+            .getElementById("lineContent")
             .insertAdjacentHTML(
-              "afterend",
-              `<h3 class="text-center mt-1 skyblueText properSize">${result[mbti]["line"][i]}</h3>`
+              "beforeend",
+              `<h3 class="text-center mt-1 skyblueText properSize line-content">${result[mbti]["line"][i]}</h3>`
             );
         }
       } else {
@@ -159,10 +159,10 @@ function next() {
         $("#name").html(result2[mbti]["HERO"] + "의 대사");
         for (let i = 0; i < result2[mbti]["line"].length; i++) {
           document
-            .getElementById("line")
+            .getElementById("lineContent")
             .insertAdjacentHTML(
-              "afterend",
-              `<h3 class="text-center mt-1 skyblueText properSize">${result2[mbti]["line"][i]}</h3>`
+              "beforeend",
+              `<h3 class="text-center mt-1 skyblueText properSize line-content">${result2[mbti]["line"][i]}</h3>`
             );
         }
       }
