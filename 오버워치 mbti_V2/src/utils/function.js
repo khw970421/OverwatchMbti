@@ -156,7 +156,7 @@ function next() {
             .getElementById("lineContent")
             .insertAdjacentHTML(
               "beforeend",
-              `<h3 class="text-center mt-1 skyblueText properSize line-content">${result[mbti]["line"][i]}</h3>`
+              `<h3 class="text-center mt-1 skyblueText properSize line-content pl-3 pr-3">${result[mbti]["line"][i]}</h3>`
             );
         }
       } else {
