@@ -1,5 +1,5 @@
-import { img, img2, img3 } from "./img.js";
 import { explain, explain2, explain3 } from "./explain.js";
+import { img, img2, img3 } from "./img.js";
 
 const isRandom = () => Math.ceil(Math.random() * 10) % 2 === 0;
 
@@ -138,16 +138,27 @@ let result = {
       "전술적인 선택이었다.",
     ],
   },
-  ESTP: {
-    HERO: "둠피스트",
-    explain: explain[12],
-    img: img[12],
-    line: [
-      "임무가 시작되면, 노닥거릴 시간은 없을 거다.",
-      "비키지 않으면, 뭉개버리겠다!",
-      "더 빠르게 처리해주마.",
-    ],
-  },
+  ESTP: isRandom()
+    ? {
+        HERO: "둠피스트",
+        explain: explain[12],
+        img: img[12],
+        line: [
+          "임무가 시작되면, 노닥거릴 시간은 없을 거다.",
+          "비키지 않으면, 뭉개버리겠다!",
+          "더 빠르게 처리해주마.",
+        ],
+      }
+    : {
+        HERO: "라마트라",
+        explain: explain3[3],
+        img: img3[3],
+        line: [
+          "어떤 대가를 치르더라도<br> 평화를 쟁취하겠다.",
+          "이기지 못할 전쟁에 뛰어들다니.",
+          "놈들이 방심하는 순간,<br> 우리가 몰아칠 것이다.",
+        ],
+      },
   ESFP: {
     HERO: "디바",
     explain: explain[13],

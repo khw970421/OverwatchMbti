@@ -1,9 +1,9 @@
+import { A, B } from "../question/selection/secondBoldMbti.js";
 import {
   mbtiQuestionObj,
   questionTitle2,
   questionTitle3,
 } from "../question/question.js";
-import { A, B } from "../question/selection/secondBoldMbti.js";
 import { q3A, q3B } from "../question/selection/thirdNoImportant.js";
 import { result, result2 } from "../resultExplain/result.js";
 
@@ -76,6 +76,13 @@ function next() {
 
     // Test : 테스트할때 위의 4줄을 지우고 아래 코드로 처리
     // mbti += "ENFJ";
+    // isMore은 true false 필요한 것 추가
+    // isMore = true / isMore = false
+    // new Date 관련 if문 false로 처리
+    // if(false)
+
+    // mbti += "ESTP";
+    // isMore = true;
 
     num++;
     $("#title").html(questionTitle2[mbti]);
