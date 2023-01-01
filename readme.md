@@ -24,3 +24,7 @@ overwatchmbti2.netlify -> 최신 mbti
 khw970421.netlify ->  최신 mbti
 
 overwatchmbti2.netlify -> 이전 mbti
+
+## 추가 개선 사항
+23년 1월 1일
+- 라마트라 업데이트 및 질문내역 변경 
