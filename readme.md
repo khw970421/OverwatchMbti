@@ -1,7 +1,9 @@
 ## 오버워치 mbti 
 
 >사이트 : [mbti](https://khw970421-mbti.netlify.app/)
->이전사이트 : [mbti](https://overwatchmbti2.netlify.app/)
+>
+>이전 사이트 : [mbti](https://overwatchmbti2.netlify.app/)
+>
 >이전 영문사이트 : [mbti](https://overwatchmbtieng.netlify.app/)
 
 관련 자료 정리
